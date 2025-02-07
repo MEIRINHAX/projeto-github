@@ -1,0 +1,11 @@
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\bin\Debug\M11_Ficha3.exe.config
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\bin\Debug\M11_Ficha3.exe
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\bin\Debug\M11_Ficha3.pdb
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.csproj.AssemblyReference.cache
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.Form1.resources
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.frmlistar.resources
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.Properties.Resources.resources
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.csproj.GenerateResource.cache
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.csproj.CoreCompileInputs.cache
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.exe
+C:\Users\Carolina meirinha\source\repos\M11_Ficha3\M11_Ficha3\obj\Debug\M11_Ficha3.pdb
