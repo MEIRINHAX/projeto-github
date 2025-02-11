@@ -77,13 +77,21 @@
             this.txtnome.Size = new System.Drawing.Size(177, 31);
             this.txtnome.TabIndex = 3;
             // 
+            // txttelefone
+            // 
+            this.txttelefone.Location = new System.Drawing.Point(93; 111);
+            this.txttelefone.Multiline = true;
+            this.txttelefone.Name = "txttelefone";
+            this.txttelefone.Size = new System.Drawing.Size(177, 31);
+            this.txttelefone.TabIndex = 4;
+            // 
             // txtidade
             // 
             this.txtidade.Location = new System.Drawing.Point(93, 63);
             this.txtidade.Multiline = true;
             this.txtidade.Name = "txtidade";
             this.txtidade.Size = new System.Drawing.Size(177, 31);
-            this.txtidade.TabIndex = 4;
+            this.txtidade.TabIndex = 5;
             // 
             // cbotipo
             // 
@@ -95,7 +103,7 @@
             this.cbotipo.Location = new System.Drawing.Point(216, 127);
             this.cbotipo.Name = "cbotipo";
             this.cbotipo.Size = new System.Drawing.Size(146, 21);
-            this.cbotipo.TabIndex = 5;
+            this.cbotipo.TabIndex = 6;
             // 
             // btninserir
             // 
@@ -103,7 +111,7 @@
             this.btninserir.Location = new System.Drawing.Point(29, 204);
             this.btninserir.Name = "btninserir";
             this.btninserir.Size = new System.Drawing.Size(103, 32);
-            this.btninserir.TabIndex = 6;
+            this.btninserir.TabIndex = 7;
             this.btninserir.Text = "Inserir";
             this.btninserir.UseVisualStyleBackColor = true;
             this.btninserir.Click += new System.EventHandler(this.btninserir_Click);
@@ -114,7 +122,7 @@
             this.btnlistar.Location = new System.Drawing.Point(150, 204);
             this.btnlistar.Name = "btnlistar";
             this.btnlistar.Size = new System.Drawing.Size(103, 32);
-            this.btnlistar.TabIndex = 7;
+            this.btnlistar.TabIndex = 8;
             this.btnlistar.Text = "Listar";
             this.btnlistar.UseVisualStyleBackColor = true;
             this.btnlistar.Click += new System.EventHandler(this.btnlistar_Click);
@@ -125,7 +133,7 @@
             this.btnlimpar.Location = new System.Drawing.Point(268, 204);
             this.btnlimpar.Name = "btnlimpar";
             this.btnlimpar.Size = new System.Drawing.Size(103, 32);
-            this.btnlimpar.TabIndex = 8;
+            this.btnlimpar.TabIndex = 9;
             this.btnlimpar.Text = "Limpar";
             this.btnlimpar.UseVisualStyleBackColor = true;
             this.btnlimpar.Click += new System.EventHandler(this.btnlimpar_Click);
