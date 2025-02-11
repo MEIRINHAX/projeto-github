@@ -29,6 +29,14 @@ namespace M11_Ficha3
             set { idade = value; }
         }
 
+        public int telefone;
+
+        public int TelefoneP
+        {
+            get { return telefone; }
+            set { telefone = value; }
+        }
+
         public string tipofunc;
 
         public string TipofuncP
