@@ -31,6 +31,7 @@
             this.dgvlista = new System.Windows.Forms.DataGridView();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipofuncionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lucro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).BeginInit();
@@ -42,11 +43,12 @@
             this.dgvlista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nome,
             this.idade,
+            this.telefone,
             this.tipofuncionario,
             this.lucro});
-            this.dgvlista.Location = new System.Drawing.Point(0, 1);
+            this.dgvlista.Location = new System.Drawing.Point(1, 1);
             this.dgvlista.Name = "dgvlista";
-            this.dgvlista.Size = new System.Drawing.Size(646, 314);
+            this.dgvlista.Size = new System.Drawing.Size(798, 314);
             this.dgvlista.TabIndex = 0;
             // 
             // nome
@@ -59,6 +61,12 @@
             // 
             this.idade.HeaderText = "idade";
             this.idade.Name = "idade";
+            // 
+            // telefone
+            // 
+            this.telefone.HeaderText = "telefone";
+            this.telefone.Name = "telefone";
+            this.telefone.Width = 150;
             // 
             // tipofuncionario
             // 
@@ -75,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 312);
+            this.ClientSize = new System.Drawing.Size(799, 312);
             this.Controls.Add(this.dgvlista);
             this.Name = "frmlistar";
             this.Text = "frmlistar";
@@ -89,6 +97,7 @@
         public System.Windows.Forms.DataGridView dgvlista;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn idade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipofuncionario;
         private System.Windows.Forms.DataGridViewTextBoxColumn lucro;
     }
