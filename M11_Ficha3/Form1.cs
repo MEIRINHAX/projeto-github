@@ -17,13 +17,31 @@ namespace M11_Ficha3
 
         private void btninserir_Click(object sender, EventArgs e)
         {
+
+            int telefone;
+            int idade;
+
+            // Verificar se o valor introduzido no telefone é um número válido
+            if (!int.TryParse(txttele.Text, out telefone))
+            {
+                MessageBox.Show("Por favor, insira apenas números no campo Telefone.", "Erro de Validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Interrompe a execução do código
+            }
+
+            // Verificar se o valor introduzido no telefone é um número válido
+            if (!int.TryParse(txtidade.Text, out idade))
+            {
+                MessageBox.Show("Por favor, insira apenas números no campo Idade.", "Erro de Validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Interrompe a execução do código
+            }
+
             switch ((cbotipo.Text))
             {
                 case "N1":
                     funcionarioN1 funcionarioN1 = new funcionarioN1();
                     funcionarioN1.NomeP = txtnome.Text;
                     funcionarioN1.IdadeP = int.Parse(txtidade.Text);
-                    funcionarioN1.NomeP = txtnome.Text;
+                    funcionarioN1.TelefoneP = int.Parse(txttele.Text);
                     funcionarioN1.TipofuncP = cbotipo.Text;
                     funcionarioN1.valor = funcionarioN1.ParticipacaoLucro();
                     ListafuncionarioN1.Add(funcionarioN1);
@@ -33,7 +51,7 @@ namespace M11_Ficha3
                     funcionarioN2 funcionarioN2 = new funcionarioN2();
                     funcionarioN2.NomeP = txtnome.Text;
                     funcionarioN2.IdadeP = int.Parse(txtidade.Text);
-                    funcionarioN2.NomeP = txtnome.Text;
+                    funcionarioN2.TelefoneP = int.Parse(txttele.Text);
                     funcionarioN2.TipofuncP = cbotipo.Text;
                     funcionarioN2.valor = funcionarioN2.ParticipacaoLucro();
                     ListafuncionarioN2.Add(funcionarioN2);
@@ -43,7 +61,7 @@ namespace M11_Ficha3
                     funcionarioN3 funcionarioN3 = new funcionarioN3();
                     funcionarioN3.NomeP = txtnome.Text;
                     funcionarioN3.IdadeP = int.Parse(txtidade.Text);
-                    funcionarioN3.NomeP = txtnome.Text;
+                    funcionarioN3.TelefoneP = int.Parse(txttele.Text);
                     funcionarioN3.TipofuncP = cbotipo.Text;
                     funcionarioN3.valor = funcionarioN3.ParticipacaoLucro();
                     ListafuncionarioN3.Add(funcionarioN3);
@@ -60,6 +78,7 @@ namespace M11_Ficha3
             {
                 janela.dgvlista.Rows.Add(ListafuncionarioN1[posicao].NomeP,
                 ListafuncionarioN1[posicao].IdadeP,
+                ListafuncionarioN1[posicao].TelefoneP,
                ListafuncionarioN1[posicao].TipofuncP,
                ListafuncionarioN1[posicao].valor);
             }
@@ -68,6 +87,7 @@ namespace M11_Ficha3
             {
                 janela.dgvlista.Rows.Add(ListafuncionarioN2[posicao].NomeP,
                 ListafuncionarioN2[posicao].IdadeP,
+                ListafuncionarioN1[posicao].TelefoneP,
                ListafuncionarioN2[posicao].TipofuncP,
                ListafuncionarioN2[posicao].valor);
             }
@@ -76,6 +96,7 @@ namespace M11_Ficha3
             {
                 janela.dgvlista.Rows.Add(ListafuncionarioN3[posicao].NomeP,
                 ListafuncionarioN3[posicao].IdadeP,
+                ListafuncionarioN3[posicao].TelefoneP,
                ListafuncionarioN3[posicao].TipofuncP,
                ListafuncionarioN3[posicao].valor);
             }
@@ -86,9 +107,23 @@ namespace M11_Ficha3
         {
             txtnome.ResetText();
             txtidade.ResetText();
+            txttele.ResetText();
             cbotipo.ResetText();
         }
 
+        private void txttele_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttele_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir apenas dígitos e teclas de controle (como backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 
 }
